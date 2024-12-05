@@ -1,12 +1,18 @@
 
 
 window.onload = () => { //executa o código após o carregamento da página
+    
+    let prometa_completa = (response) => {
+        console.log(response.text().then((data) => {
+            document.getElementById('conteudo').innerHTML = data;
 
-    let promessa = fetch('http:localhost:3000/index.php');
+    }));
+
 
     let btn_iniciar_func = document.addEventListener('DOMContentLoaded', (event) => {
         console.log('DOM completamente carregado e analisado');
 
+        fetch('main.php').then(prometa_completa);
         window.document.getElementById('btn-inicial').addEventListener('click', (event) => {
 
         //    window.document.getElementById('btn-inicial').style.display = 'none';
@@ -20,6 +26,8 @@ window.onload = () => { //executa o código após o carregamento da página
             
             
             
+            
         });
     });
+}
 }
