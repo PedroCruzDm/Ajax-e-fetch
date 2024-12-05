@@ -1,0 +1,29 @@
+@import url(animation.css);
+*
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInOut 4s forwards;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#btn-inicial{
+    background-color: rgb(0, 119, 255);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-inicial:hover{
+    background-color: #00ff9d;
+}
