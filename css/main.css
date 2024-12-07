@@ -7,6 +7,7 @@ body{
     padding: 20px;
     text-align: center;
     animation: fadeInOut 4s forwards;
+    scroll: none;
 }
 
 main{
@@ -16,7 +17,7 @@ main{
     height: 100vh;
 }
 
-#btn-inicial{
+#btn-inicial, .btn-N{
     background-color: rgb(0, 119, 255);
     color: #fff;
     padding: 10px 20px;
@@ -24,6 +25,12 @@ main{
     border-radius: 5px;
     cursor: pointer;
 }
-#btn-inicial:hover{
+#btn-inicial:hover, .btn-N:hover{
     background-color: #00ff9d;
+}
+
+#V_Youtube{
+    border: none;
+    width: 100vw;
+    height: 100vh;
 }
